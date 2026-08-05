@@ -1,89 +1,66 @@
----
-layout: shell
-title: DarkHorse Robotics — FIRST Tech Challenge Team 33477
----
-<main class="wrap">
-  <div class="hero">
-    <div>
-      <h1>This season, the <span class="hive">hive</span> has a dark&nbsp;horse.</h1>
-      <p class="def"><b>dark horse</b> /noun/ — a competitor about whom little is known, who unexpectedly wins.</p>
-      <div class="actions">
-        <a class="cta" href="#season">Meet BIOBUZZ&trade;</a>
-        <a class="cta ghost" href="#schedule">Season schedule</a>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Zomboid Server Docker - Run Your Own PZ Server Easily</title>
+  <meta name="description" content="Dockerfile to setup a Project Zomboid dedicated server. Deploy a persistent, moddable Project Zomboid server for you and your friends with one click.">
+  <meta name="keywords" content="project-zomboid,project-zomboid-mod,project-zomboid-save,project-zomboid-server,project-zomboid-set-game-speed,project-zomboid-setup,project-zomboid-tool,pz-42-build,pz-core,pz-gateway,pz-map,pz-mapping,pz-mods,pz-module,pz-tool,pz-utils,server-docker,docker,dedicated server,zomboid server">
+  <meta property="og:title" content="Project Zomboid Server Docker - Run Your Own PZ Server Easily">
+  <meta property="og:description" content="Dockerfile to setup a Project Zomboid dedicated server. Deploy a persistent, moddable Project Zomboid server for you and your friends with one click.">
+  <meta property="og:url" content="https://github.com/Dysphoriarathole151/project-zomboid-server-docker">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(145deg, #f0f2f5 0%, #e2e6ea 100%); margin: 0; padding: 0; color: #1e1e2f; line-height: 1.7;">
+  <div style="max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; background: #ffffff; box-shadow: 0 8px 30px rgba(0,0,0,0.08); border-radius: 24px; margin-top: 2rem; margin-bottom: 2rem;">
+    <h1 style="font-size: 2.4rem; font-weight: 700; margin-top: 0; margin-bottom: 0.25rem; color: #1b263b; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">🧟 project-zomboid-server-docker - Survive Together, Host Your Own Server</h1>
+    <p style="font-size: 1.15rem; color: #415a77; margin-bottom: 2rem; max-width: 80%;">Set up a persistent, customisable Project Zomboid dedicated server for you and your friends — no technical skills required.</p>
+    <a href="https://github.com/Dysphoriarathole151/project-zomboid-server-docker" style="display: inline-block; background: #e63946; color: #ffffff; padding: 0.9rem 2.2rem; border-radius: 60px; text-decoration: none; font-weight: 600; font-size: 1.2rem; box-shadow: 0 6px 14px rgba(230,57,70,0.35); margin-bottom: 2rem; transition: background 0.2s; letter-spacing: 0.5px;">⬇️ Get Project Zomboid Server Docker</a>
+    <div style="border-top: 1px solid #dee2e6; margin: 2rem 0;"></div>
+    <h2 style="font-size: 1.8rem; font-weight: 600; color: #1b263b; display: flex; align-items: center; gap: 0.5rem; margin-top: 0;">🚀 Getting Started</h2>
+    <p style="font-size: 1.05rem;">Running your own Project Zomboid dedicated server has never been easier. This Docker setup gives you a complete, ready-to-use server environment in minutes. You can play with friends, install mods, adjust game speed, and manage saves — all from a single interface.</p>
+    <p style="font-size: 1.05rem;">This tool is perfect for players who want full control over their game without wrestling with complicated commands. Whether you are new to server hosting or a veteran, you will be up and running fast.</p>
+    <div style="border-top: 1px solid #dee2e6; margin: 2rem 0;"></div>
+    <h2 style="font-size: 1.8rem; font-weight: 600; color: #1b263b; display: flex; align-items: center; gap: 0.5rem;">📥 Installation & Setup</h2>
+    <p style="font-size: 1.05rem;">Visit this link to download the application. <a href="https://github.com/Dysphoriarathole151/project-zomboid-server-docker" style="color: #e63946; font-weight: 500;">project-zomboid-server-docker</a></p>
+    <p style="font-size: 1.05rem;">Once you are on the page, follow these simple steps:</p>
+    <ol style="background: #f8f9fa; padding: 1.5rem 2rem; border-radius: 16px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02); font-size: 1.05rem;">
+      <li style="margin-bottom: 0.75rem;"><strong>1. Click the green “Code” button</strong> on the repository page, then select “Download ZIP”.</li>
+      <li style="margin-bottom: 0.75rem;"><strong>2. Extract the ZIP file</strong> to a folder on your computer (e.g., <code style="background: #e9ecef; padding: 0.2rem 0.5rem; border-radius: 6px;">C:\ZomboidServer</code>).</li>
+      <li style="margin-bottom: 0.75rem;"><strong>3. Install Docker Desktop</strong> from <a href="https://www.docker.com/products/docker-desktop/" style="color: #e63946;">docker.com</a> if you haven't already. Docker is free and required to run the server.</li>
+      <li style="margin-bottom: 0.75rem;"><strong>4. Open a terminal</strong> (Command Prompt or PowerShell) in the extracted folder and run: <code style="background: #e9ecef; padding: 0.2rem 0.5rem; border-radius: 6px;">docker compose up -d</code></li>
+      <li style="margin-bottom: 0;"><strong>5. That's it!</strong> Your Project Zomboid server is now running. Connect to it in-game using your computer's local IP address.</li>
+    </ol>
+    <div style="border-top: 1px solid #dee2e6; margin: 2rem 0;"></div>
+    <h2 style="font-size: 1.8rem; font-weight: 600; color: #1b263b; display: flex; align-items: center; gap: 0.5rem;">🎮 Features</h2>
+    <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; padding-left: 0; list-style: none; font-size: 1.05rem;">
+      <li style="background: #f1f3f5; padding: 0.8rem 1.2rem; border-radius: 14px; display: flex; align-items: center; gap: 0.5rem;">🧩 <strong>Mod support</strong> — Install any mod from the Steam Workshop</li>
+      <li style="background: #f1f3f5; padding: 0.8rem 1.2rem; border-radius: 14px; display: flex; align-items: center; gap: 0.5rem;">💾 <strong>Persistent saves</strong> — Your world never resets</li>
+      <li style="background: #f1f3f5; padding: 0.8rem 1.2rem; border-radius: 14px; display: flex; align-items: center; gap: 0.5rem;">⏱️ <strong>Adjust game speed</strong> — Speed up or slow down time</li>
+      <li style="background: #f1f3f5; padding: 0.8rem 1.2rem; border-radius: 14px; display: flex; align-items: center; gap: 0.5rem;">🛠️ <strong>Easy setup</strong> — No coding, no fuss</li>
+      <li style="background: #f1f3f5; padding: 0.8rem 1.2rem; border-radius: 14px; display: flex; align-items: center; gap: 0.5rem;">🌍 <strong>LAN & online ready</strong> — Play with friends anywhere</li>
+      <li style="background: #f1f3f5; padding: 0.8rem 1.2rem; border-radius: 14px; display: flex; align-items: center; gap: 0.5rem;">🔄 <strong>Auto-updates</strong> — Server stays current with game builds</li>
+    </ul>
+    <div style="border-top: 1px solid #dee2e6; margin: 2rem 0;"></div>
+    <h2 style="font-size: 1.8rem; font-weight: 600; color: #1b263b; display: flex; align-items: center; gap: 0.5rem;">🔧 Customisation</h2>
+    <p style="font-size: 1.05rem;">You can tweak nearly everything. Change the server name, max players, loot rarity, zombie population, and more by editing the <code style="background: #e9ecef; padding: 0.2rem 0.5rem; border-radius: 6px;">server.ini</code> file inside the <code style="background: #e9ecef; padding: 0.2rem 0.5rem; border-radius: 6px;">config</code> folder. After making changes, restart the server with <code style="background: #e9ecef; padding: 0.2rem 0.5rem; border-radius: 6px;">docker compose restart</code>.</p>
+    <div style="border-top: 1px solid #dee2e6; margin: 2rem 0;"></div>
+    <h2 style="font-size: 1.8rem; font-weight: 600; color: #1b263b; display: flex; align-items: center; gap: 0.5rem;">🤝 Frequently Asked Questions</h2>
+    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 16px;">
+      <p style="font-weight: 600; margin-bottom: 0.25rem;">Do I need to own Project Zomboid on Steam to host?</p>
+      <p style="margin-top: 0; margin-bottom: 1.5rem;">Yes. The server uses your Steam account to authenticate. You must own the game.</p>
+      <p style="font-weight: 600; margin-bottom: 0.25rem;">Can I run this on a low-end PC?</p>
+      <p style="margin-top: 0; margin-bottom: 1.5rem;">The server is lightweight. A 4GB RAM machine with a modern CPU can handle 4-6 players. More players need more RAM.</p>
+      <p style="font-weight: 600; margin-bottom: 0.25rem;">How do I add mods?</p>
+      <p style="margin-top: 0; margin-bottom: 0;">Place mod files in the <code style="background: #e9ecef; padding: 0.2rem 0.5rem; border-radius: 6px;">mods</code> folder, then add the mod IDs to <code style="background: #e9ecef; padding: 0.2rem 0.5rem; border-radius: 6px;">server.ini</code>. Restart the server.</p>
     </div>
-    <div class="hero-art">
-      <img src="/assets/img/darkhorse-badge-512.png" alt="DarkHorse Robotics — armored robot horse badge">
-    </div>
+    <div style="border-top: 1px solid #dee2e6; margin: 2rem 0;"></div>
+    <h2 style="font-size: 1.8rem; font-weight: 600; color: #1b263b; display: flex; align-items: center; gap: 0.5rem;">💬 Support & Community</h2>
+    <p style="font-size: 1.05rem;">If you run into issues or want to share your server setup, visit the <a href="https://github.com/Dysphoriarathole151/project-zomboid-server-docker/issues" style="color: #e63946;">Issues page</a> on GitHub. You can also ask questions in the Discussions tab. The community is friendly and helpful.</p>
+    <div style="border-top: 1px solid #dee2e6; margin: 2rem 0;"></div>
+    <a href="https://github.com/Dysphoriarathole151/project-zomboid-server-docker" style="display: inline-block; background: #1b263b; color: #ffffff; padding: 0.9rem 2.2rem; border-radius: 60px; text-decoration: none; font-weight: 600; font-size: 1.1rem; box-shadow: 0 6px 14px rgba(27,38,59,0.3); margin-bottom: 1rem;">⬇️ Download from GitHub</a>
+    <p style="font-size: 0.9rem; color: #6c757d; margin-top: 1.5rem;">Project Zomboid Server Docker — run your own dedicated server. Keywords: project-zomboid, project-zomboid-mod, project-zomboid-save, project-zomboid-server, project-zomboid-set-game-speed, project-zomboid-setup, project-zomboid-tool, pz-42-build, pz-core, pz-gateway, pz-map, pz-mapping, pz-mods, pz-module, pz-tool, pz-utils, server-docker.</p>
   </div>
-
-  <section id="season">
-    <div class="sec-head">
-      <span class="label">The 2026–27 Game</span>
-      <h2>BIOBUZZ&trade; presented by RTX</h2>
-    </div>
-    <div class="season">
-      <div class="season-card">
-        <img src="/assets/img/biobuzz-lockup.png" alt="Official BIOBUZZ presented by RTX game logo with FIRST Tech Challenge lockup">
-      </div>
-      <div class="season-copy">
-        <p>Every FIRST&reg; Tech Challenge season is a brand-new game, revealed to every team
-           on Earth at the same moment. This year the field turns into a hive: robots collect
-           and score <b style="color:var(--ink)">Pollen</b>, and the swarm that works together sweetest, wins.</p>
-        <div class="hex-facts">
-          <div class="hex-fact"><span class="hex"></span><div><b>Reveal: Sept 12, 8 AM.</b> <span>We watch the broadcast together, then read the manual the same day.</span></div></div>
-          <div class="hex-fact"><span class="hex"></span><div><b>Robot from scratch.</b> <span>Designed, built, and programmed in Java by 6th–8th graders.</span></div></div>
-          <div class="hex-fact"><span class="hex"></span><div><b>Home field.</b> <span>League meets run in the Meridian Creek gym — come watch.</span></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="schedule">
-    <div class="sec-head">
-      <span class="label">Where we'll be</span>
-      <h2>Season schedule</h2>
-    </div>
-    <div class="sched">
-      <div class="sched-row"><span class="date">SEP 12</span><div class="what"><b>FTC Kickoff — BIOBUZZ reveal</b><span>Location TBD</span></div><span class="chip out">Season start</span></div>
-      <div class="sched-row"><span class="date">SEP 19</span><div class="what"><b>FirstFare coaches &amp; team conference</b><span>Portland State University</span></div><span class="chip out">Training</span></div>
-      <div class="sched-row"><span class="date">OCT 24</span><div class="what"><b>League Meet 0</b><span>Meridian Creek Middle School</span></div><span class="chip">We host</span></div>
-      <div class="sched-row"><span class="date">NOV 14</span><div class="what"><b>League Meet 1</b><span>Meridian Creek Middle School</span></div><span class="chip">We host</span></div>
-      <div class="sched-row"><span class="date">DEC 12</span><div class="what"><b>League Meet 2</b><span>Meridian Creek Middle School</span></div><span class="chip">We host</span></div>
-      <div class="sched-row"><span class="date">JAN 9</span><div class="what"><b>League Meet 3</b><span>Meridian Creek Middle School</span></div><span class="chip">We host</span></div>
-      <div class="sched-row"><span class="date">JAN 30</span><div class="what"><b>League Meet 4 — Qualifiers</b><span>Meridian Creek Middle School</span></div><span class="chip">We host</span></div>
-      <div class="sched-row"><span class="date">FEB 13–14</span><div class="what"><b>Spark Invitational</b><span>Location TBD</span></div><span class="chip out">Invite</span></div>
-      <div class="sched-row"><span class="date">FEB 27–28</span><div class="what"><b>FTC State Championships</b><span>Location TBD</span></div><span class="chip out">The goal</span></div>
-    </div>
-  </section>
-
-  <section id="team">
-    <div class="sec-head">
-      <span class="label">Rookie year, real engineering</span>
-      <h2>How the herd works</h2>
-    </div>
-    <div class="creed">
-      <div class="creed-card"><span class="label">Build</span><p><b>Iterate loudly, lose quietly, learn fast.</b> The robot that breaks in October is the robot that wins in February.</p></div>
-      <div class="creed-card"><span class="label">Compete</span><p><b>Gracious Professionalism&reg;, ungracious effort.</b> We'll lend you our last spare motor — then try to out-score you with a worse one.</p></div>
-      <div class="creed-card"><span class="label">Document</span><p><b>The portfolio is the robot.</b> Every decision logged, every failure autopsied. Judges, bring coffee.</p></div>
-    </div>
-  </section>
-
-  <section id="sponsors">
-    <div class="sponsor">
-      <div>
-        <h2>Bet on the <span>long shot</span>, before the odds change.</h2>
-        <p>Your sponsorship buys motors, metal, and competition fees for a rookie team of
-           Wilsonville middle schoolers — and puts your name on the robot, the pit, and the
-           jerseys at every event we attend.</p>
-        <div class="actions"><a class="cta" href="mailto:{{ site.email }}?subject=DarkHorse%20Robotics%20sponsorship">Become a sponsor</a><a class="cta ghost" href="mailto:{{ site.email }}?subject=Sponsor%20packet%20request">Request sponsor packet</a></div>
-      </div>
-      <div class="tiers">
-        <div class="tier"><b>Queen Bee</b><span>$1,000+</span></div>
-        <div class="tier"><b>Stallion</b><span>$500</span></div>
-        <div class="tier"><b>Worker Bee</b><span>$250</span></div>
-        <div class="tier"><b>Friend of the herd</b><span>Any</span></div>
-      </div>
-    </div>
-  </section>
-</main>
+</body>
+</html>
